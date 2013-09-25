@@ -19,7 +19,7 @@ Here's the script.
 
     import time
     import requests
-    from growl import Notification, GROWL_UDP_PORT
+    from growl import Registration, Notification, GROWL_UDP_PORT
     from socket import socket, AF_INET, SOCK_DGRAM
 
     prev_id = ''
