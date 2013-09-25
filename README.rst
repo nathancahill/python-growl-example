@@ -8,10 +8,14 @@ and apiweb.io provides an easy to use API for Craigslist.
 
 Requires growl and requests. Install them with pip:
 
+.. code-block:: bash
+
     $ pip install requests
     $ pip install growl
 
 Here's the script. 
+
+.. code-block:: python
 
     import time
     import requests
