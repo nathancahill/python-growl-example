@@ -2,7 +2,7 @@
 Using Growl with apiweb.io
 ==========================
 
-In search of an apartment in Boulder, I needed a way to be notified instantly
+In search for an apartment in Boulder, I needed a way to be notified instantly
 when new places are listed on Craigslist. Growl is the obvious choice on my Mac, 
 and apiweb.io provides an easy to use API for Craigslist.
 
