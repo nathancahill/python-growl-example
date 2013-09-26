@@ -29,7 +29,19 @@ Here's the script.
     r = Registration('Craigslist Watcher')
     s.sendto(r.payload(), addr)
 
+    time_sleep = 60
+
     while True:
+        time.sleep(time_sleep)
+
+        try:
+            r = requests.get('http://apiweb.io/api/nathancahill/craigslist/boulder/apa')
+        except requests.exceptions.ConnectionError:
+            time_sleep = time_sleep * 2
+            break
+        else:
+            time_sleep = 60
+
         r = requests.get('http://apiweb.io/api/nathancahill/craigslist/boulder/apa')
         j = r.json()
 
