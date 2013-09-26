@@ -54,8 +54,6 @@ Here's the script.
 
             prev_id = j['results'][0]['id']
 
-        time.sleep(60)
-
 
 How to use it
 =============
